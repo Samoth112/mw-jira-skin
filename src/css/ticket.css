@@ -1,0 +1,73 @@
+.ticket-layout {
+  height: 100%;
+  width: 50%;
+  margin: 6rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.ticket-num {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: .5rem 0;
+  grid-column: 1;
+}
+
+.ticket-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: .5rem 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ticket-title-field {
+  color: black;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: .5rem 0;
+  border: none;
+  line-height: 1em;
+  height: 1em;
+  padding: 0
+}
+
+.ticket-num-field {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: .5rem 0;
+  border: none;
+  line-height: 1em;
+  height: 1em;
+  padding: 0;
+  grid-row: 2;
+}
+
+.ticket-notes {
+  grid-column: 1 / span 2;
+}
+
+.notes {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 200px;
+  width: auto;
+  margin: 0 1rem 0 0;
+}
+
+.ticket-comments {
+  grid-column: 1 / span 2;
+}
+
+.comments {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 200px;
+  width: auto;
+  margin: 0 1rem 0 0;
+}
+
+.ticket-children {
+  grid-column: 1 / span 3;
+}

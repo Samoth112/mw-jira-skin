@@ -1,17 +1,13 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import ticketReducer from '../features/ticket/ticketSlice';
+import fundraiserReducer from '../features/fundraiser/fundraiserSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
-  },
-});
+    ticket: ticketReducer,
+    fundraiser: fundraiserReducer
+  }
+})
 
-export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
->;
+export type AppDispatch = typeof store.dispatch;

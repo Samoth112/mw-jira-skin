@@ -1,0 +1,50 @@
+.field {
+  grid-column: 1;
+  position: relative;
+}
+
+.fields {
+  grid-column: 1;
+}
+
+.field-label {
+  display: inline-block;
+  font-weight: 800;
+  margin: 1rem 0;
+  max-width: 15rem;
+  width: 15rem;
+}
+
+.field-value {
+  display: inline-block;
+  min-width: 2.5rem;
+}
+
+.submit {
+  grid-column: 2;
+  grid-row: 1;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+.submit-new {
+  grid-row: 3;
+  height: 50%;
+  width: 25%;
+  margin: auto 0;
+}
+
+.transition-form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 51px);
+  grid-column: 1 / span 2;
+}
+
+.ticket-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 3rem 2.5rem repeat(3, 51px);
+  grid-column: 1 / span 2;
+}

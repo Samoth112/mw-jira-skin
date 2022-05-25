@@ -1,0 +1,26 @@
+.status-bar {
+  display: grid;
+  grid-column-gap: .5rem;
+  grid-template-columns: auto 1fr;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin: .5rem 0;
+}
+
+.status {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+
+.chevron {
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  grid-column: 2;
+  grid-row: 1;
+  height: .5rem;
+  width: .5rem;
+  transform: rotate(45deg);
+  margin: .25rem 0 0 .25rem;
+}

@@ -1,0 +1,36 @@
+.details {
+  grid-column: 3;
+  position: relative;
+}
+
+.checklist {
+  box-sizing: border-box;
+  position: absolute;
+  background-color:beige;
+  padding: 1rem 2rem;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    padding: 0 2.5rem 0 0;
+
+    li {
+      display: grid;
+      grid-template-columns: 1fr 100%;
+      grid-template-rows: 100% 1fr;
+      height: auto;
+      margin: 0 0 .5rem 0;
+    }
+  }
+}
+
+.checkbox {
+  grid-row: 1;
+  height: min-content;
+}
+
+.checklist-label {
+  font-size: .75em;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
